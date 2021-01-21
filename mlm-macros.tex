@@ -1,0 +1,385 @@
+%
+% style
+%
+\newcommand{\heading}[1]{{\vspace{6pt}\noindent\sc{#1.}}}
+% \renewcommand{\paragraph}[1]{\heading{#1}}
+\newcommand{\ith}[1]{\ensuremath{#1^{\text{th}}}\xspace}
+
+%
+% games
+%
+\newcommand{\Gm}{\ensuremath{\mathrm{Game}}\xspace}
+\newcommand{\A}{\ensuremath{\mathcal{A}}\xspace}
+\newcommand{\D}{\ensuremath{\mathcal{D}}\xspace}
+\newcommand{\F}{\ensuremath{\mathcal{F}}\xspace}
+\newcommand{\K}{\ensuremath{\mathcal{K}}\xspace}
+\newcommand{\odv}{\ensuremath{\mathcal{O}}\xspace}
+\newcommand{\R}{\ensuremath{\mathcal{R}}\xspace}
+\newcommand{\Q}{\ensuremath{\mathcal{Q}}\xspace}
+\renewcommand{\U}{\ensuremath{\mathcal{U}}\xspace}
+\newcommand{\X}{\ensuremath{\mathcal{X}}\xspace}
+\newcommand{\Y}{\ensuremath{\mathcal{Y}}\xspace}
+\newcommand{\Z}{\ensuremath{\mathcal{Z}}\xspace}
+\newcommand{\Hyb}{\ensuremath{\mathcal{G}}\xspace}
+\newcommand{\hybwin}{\ensuremath{\mathrm{W}}}
+\newcommand{\B}{\ensuremath{\mathcal{B}}\xspace}
+\newcommand{\neglfunc}[1][]{\ensuremath{\mathrm{negl}}{#1}{}}
+\newcommand{\hyb}[1]{\ensuremath{\mathsf{H}_{#1}}\xspace}
+
+%
+% rings and vectors
+%
+\newcommand{\Rcyclo}{\ensuremath{\ZZ[x]/\langle \phi(x) \rangle}}
+\newcommand{\Rcycloq}{\ensuremath{\ZZ_q[x]/\langle \phi(x) \rangle}}
+\newcommand{\normgen}[1]{\ensuremath{{\|{#1}\|}}}
+\newcommand{\inftynorm}[1]{\ensuremath{{\|{#1}\|}_\infty}}
+\newcommand{\gau}[2]{\ensuremath{D_{#1,#2}}}
+\newcommand{\vecv}[1][]{\ensuremath{\mathbf{v}}{#1}{}}
+\newcommand{\vecu}[1][]{\ensuremath{\mathbf{u}}{#1}{}}
+\newcommand{\vecb}[1][]{\ensuremath{\mathbf{b}}{#1}{}}
+\newcommand{\veca}[1][]{\ensuremath{\mathbf{a}}{#1}{}}
+\newcommand{\vecd}[1][]{\ensuremath{\mathbf{d}}{#1}{}}
+\newcommand{\veck}[1][]{\ensuremath{\mathbf{k}}{#1}{}}
+\newcommand{\vecx}[1][]{\ensuremath{\mathbf{x}}{#1}{}}
+\newcommand{\vecy}[1][]{\ensuremath{\mathbf{y}}{#1}{}}
+\newcommand{\vecs}[1][]{\ensuremath{\mathbf{s}}{#1}{}}
+\newcommand{\vece}[1][]{\ensuremath{\mathbf{e}}{#1}{}}
+\newcommand{\vecc}[1][]{\ensuremath{\mathbf{c}}{#1}{}}
+\newcommand{\vecr}[1][]{\ensuremath{\mathbf{r}}{#1}{}}
+
+%
+% encryption
+%
+%\newcommand{\pke}{\ensuremath{\mathrm{\Pi}}\xspace}
+%\newcommand{\Gen}[1][]{\ensuremath{\mathbf{Gen}}{#1}{}}
+%\newcommand{\Enc}[1][]{\ensuremath{\mathbf{Enc}}{#1}{}}
+%\newcommand{\Dec}[1][]{\ensuremath{\mathbf{Dec}}{#1}{}}
+%\newcommand{\Eval}[1][]{\ensuremath{\mathbf{Eval}}{#1}{}}
+\newcommand{\pk}[1][]{\ensuremath{\mathit{pk}}{#1}{}}
+\newcommand{\sk}[1][]{\ensuremath{\mathit{sk}}{#1}{}}
+%\newcommand{\ctxt}[1][]{\ensuremath{\mathit{c}}{#1}{}}
+%\newcommand{\vctxt}[1][]{\ensuremath{\mathbf{c}}{#1}{}}
+%\newcommand{\vecctxt}{\ensuremath{(\vctxt[1],\vctxt[2])}}
+%\newcommand{\ptxt}[1][]{\ensuremath{\mathit{m}}{#1}{}}
+
+
+
+%
+% obfuscation
+%
+\newcommand{\IO}{\ensuremath{\mathrm{IO}}\xspace}
+%\newcommand{\Obf}[1][]{\ensuremath{\mathbf{Obf}}{#1}{}}
+%\newcommand{\Samp}{\ensuremath{\mathcal{S}}\xspace}
+
+%
+% jigsaw puzzles
+%
+\newcommand{\MJP}{MJP\xspace}
+\newcommand{\MJPs}{MJPs\xspace}
+\newcommand{\MBP}{MBP\xspace}
+%
+\newcommand{\parpriv}{\ensuremath{\mathsf{sk}}\xspace}
+\newcommand{\parpub}{\ensuremath{\mathsf{pp}}\xspace}
+\newcommand{\parsec}{\ensuremath{\mathsf{sp}}\xspace}
+\newcommand{\spar}{\parsec}
+\newcommand{\msk}{\ensuremath{\mathsf{msk}}\xspace}
+\newcommand{\params}{\ensuremath{\mathsf{prms}}\xspace}
+\newcommand{\parop}{\ensuremath{\mathsf{evk}}\xspace}
+\newcommand{\parzt}{\ensuremath{\mathsf{ztk}}\xspace}
+%
+\newcommand{\jiggen}{\ensuremath{\mathsf{JGen}}\xspace}
+\newcommand{\jigvrf}{\ensuremath{\mathsf{JVer}}\xspace}
+\newcommand{\jigenc}{\ensuremath{\mathsf{JEnc}}\xspace}
+\newcommand{\jiginst}{\ensuremath{\mathsf{JInstGen}}\xspace}
+\newcommand{\jiggenpuzz}{\ensuremath{\mathsf{JGenPuzz}}\xspace}
+\newcommand{\jigcomp}{\ensuremath{\mathsf{JCompute}}\xspace}
+\newcommand{\jigzt}{\ensuremath{\mathsf{JZTParam}}\xspace}
+\newcommand{\jigtest}{\ensuremath{\mathsf{JTest}}\xspace}
+\newcommand{\puzz}{\ensuremath{\mathsf{puzzle}}\xspace}
+%
+\newcommand{\oindenc}{\ensuremath{\mathcal{O}_{\mathsf{zt}}}\xspace}
+\newcommand{\oindzt}{\ensuremath{\mathcal{O}_{\mathsf{ztrand}}}\xspace}
+\newcommand{\obranch}{\ensuremath{\mathcal{O}_{f,g}}\xspace}
+\newcommand{\orandpoly}{\ensuremath{\mathcal{O}_{g,p_x}}\xspace}
+\newcommand{\orand}{\ensuremath{\mathcal{O}_{A,C}}\xspace}
+%
+\newcommand{\valid}{\ensuremath{\mathsf{Val}}\xspace}
+\newcommand{\zt}{\ensuremath{\mathbf{zt}}\xspace}
+%
+\newcommand{\mlin}{\ensuremath{1^\kappa}\xspace}
+\newcommand{\prodb}[1]{\ensuremath{\prod\limits_{#1=1}^\kappa \beta_{#1}}\xspace}
+\newcommand{\prodbnolim}[1]{\ensuremath{\prod_{#1=1}^\kappa \beta_{#1}}\xspace}
+\newcommand{\prodbiless}{\ensuremath{\prod\limits_{i=1}^\kappa-1 \beta_i}\xspace}
+\newcommand{\prodzi}{\ensuremath{\prod\limits_{i=1}^\kappa z_i}\xspace}
+\newcommand{\prodzinolim}{\ensuremath{\prod_{i=1}^\kappa z_i}\xspace}
+\newcommand{\prodbj}{\ensuremath{\prod\limits_{j=1}^\kappa \beta_j}\xspace}
+\newcommand{\inlineprodbi}{\ensuremath{\prod_{i=1}^{\kappa} \beta_i}\xspace}
+\newcommand{\inlineprodbj}{\ensuremath{\prod_{j=1}^{\kappa} \beta_j}\xspace}
+\newcommand{\pzt}{\ensuremath{p_{zt}}}
+\newcommand{\indset}{\ensuremath{\mathcal{S}}}
+\newcommand{\topset}{\ensuremath{\mathcal{U}}}
+
+
+%
+% branching programs
+% 
+
+\newcommand{\bp}{\ensuremath{\mathcal{M}}\xspace}
+\newcommand{\rbp}{\ensuremath{\widehat{\mathcal{M}}}\xspace}
+\newcommand{\rbptild}{\ensuremath{\widetilde{\mathcal{M}}}\xspace}
+\newcommand{\inp}{\ensuremath{\mathsf{inp}}\xspace}
+\newcommand{\xinp}[1]{\ensuremath{x_{\inp(#1)}}\xspace}
+\newcommand{\matbpb}{\ensuremath{M_{b,l}}}
+\newcommand{\matbp}{\ensuremath{M_{x_{\inp(l)},l}}}
+\newcommand{\matrbp}{\ensuremath{\widehat{M}_{x_{\inp(l)},l}}}
+\newcommand{\matrbpb}{\ensuremath{\widehat{M}_{b,l}}}
+\newcommand{\matrbptild}{\ensuremath{\widetilde{M}_{x_{\inp(l)},l}}}
+\newcommand{\matrbpbtild}{\ensuremath{\widetilde{M}_{b,l}}}
+\newcommand{\matrbpsimp}{\ensuremath{\widehat{M}_l}}
+\newcommand{\matentry}[1]{\ensuremath{{#1}^{\xinp{l}}_{i,j,l}}\xspace}
+\newcommand{\matentryspec}[2]{\ensuremath{{#1}^{\xinp{#2}}_{i,j,#2}}\xspace}
+\newcommand{\lhs}{\ensuremath{M_0}}
+\newcommand{\rhs}{\ensuremath{M_{L+1}}}
+\newcommand{\rlhs}{\ensuremath{\widehat{M}_0}}
+\newcommand{\rrhs}{\ensuremath{\widehat{M}_{L+1}}}
+\newcommand{\rlhstild}{\ensuremath{\widetilde{M}_0}}
+\newcommand{\rrhstild}{\ensuremath{\widetilde{M}_{L+1}}}
+\newcommand{\bpscalars}[1]{\ensuremath{{#1}_{x_{\inp(l)},l}}}
+\newcommand{\bpscalarsspec}[2]{\ensuremath{{#1}_{x_{#2},#2}}}
+\newcommand{\lhsscalar}[1]{\ensuremath{{#1}_{0}}}
+\newcommand{\rhsscalar}[1]{\ensuremath{{#1}_{L+1}}}
+\newcommand{\branch}{\ensuremath{M_0 \cdot \left(\prod\limits_{l=1}^L \matbp\right) \cdot M_{L+1}}}
+\newcommand{\bpdefn}{\ensuremath{(L,\nu,d,\inp,\{\matbp\}_{l\in[L]},\lhs,\rhs)}\xspace}
+\newcommand{\rbpdefn}{\ensuremath{(L,\nu,d,\inp,\{\matrbp{}\}_{l\in[L]},\rlhs,\rrhs)}\xspace}
+\newcommand{\bpdefnL}{\ensuremath{(L+2,\nu,d,\inp,\{\matbp\}_{l\in[L]},\lhs,\rhs)}\xspace}
+\newcommand{\rbpdefnL}{\ensuremath{(L+2,\nu,d,\inp,\{\matrbp{}\}_{l\in[L]},\rlhs,\rrhs)}\xspace}
+\newcommand{\rbpdefnLtild}{\ensuremath{(L+2,\nu,d,\inp,\{\matrbptild{}\}_{l\in[L]},\rlhstild,\rrhstild)}\xspace}
+\newcommand{\randbranch}[1]{\ensuremath{\widehat{M}_0 \cdot \left(\prod\limits_{l=1}^{#1} \matrbp\right) \cdot \widehat{M}_{#1+1}}}
+\newcommand{\randbranchtild}[1]{\ensuremath{\rlhstild \cdot \left(\prod\limits_{l=1}^{#1} \matrbptild\right) \cdot \rrhstild}}
+\newcommand{\randbranchE}[1]{\ensuremath{E_0 \cdot \left(\prod\limits_{l=1}^{#1} E_{l,x_\inp(l)}\right) \cdot E_{#1+1}}}
+\newcommand{\randbranchinp}[1]{\ensuremath{\widehat{M}_0 \cdot \left(\prod\limits_{l=1}^{#1} \matrbpsimp\right) \cdot \widehat{M}_{#1+1}}}
+\newcommand{\brpoly}{\ensuremath{\mathsf{BRPOLY}_{\rbp,A}}}
+\newcommand{\randpoly}{\ensuremath{\mathsf{\$POLY}_{\kappa,A}}}
+\newcommand{\brpolyx}[1]{\ensuremath{\mathsf{BRPOLY}_{\rbp,A_{#1}}}}
+\newcommand{\randpolyx}[1]{\ensuremath{\mathsf{\$POLY}_{\kappa,{#1}}}}
+\newcommand{\algadv}{\adv^{\gamma}}
+\newcommand{\cghadv}{\adv^{\Y||\Z}}
+\newcommand{\advan}[1]{\ensuremath{\mathsf{Adv}(#1)}\xspace}
+
+
+\newcommand{\qu}{\ensuremath{\mathcal{Q}}\xspace}
+\newcommand{\x}[1]{\ensuremath{X_{#1}}\xspace}
+\newcommand{\y}[1]{\ensuremath{Y_{#1}}\xspace}
+\newcommand{\xchal}[1]{\ensuremath{x_{#1}^{\mathsf{chl}}}\xspace}
+
+%
+% GGH MLM stuff
+%
+\newcommand{\gghidealh}{\ensuremath{\langle hg \rangle}}
+\newcommand{\gghideal}{\ensuremath{\langle g \rangle}}
+%\newcommand{\btil}[1]{\frac{1}{\widehat{B}^{-#1\kappa}}}
+
+
+%
+% signature stuff
+%
+%\newcommand{\sigsch}{\ensuremath{\mathcal{SIG}}}
+%\newcommand{\homsch}{\ensuremath{\mathcal{HOM}}}
+%\newcommand{\htdf}{\mathsf{HTDF} }
+%\newcommand{\funchtdf}[2]{f_{\pk,#1}(#2)}
+%\newcommand{\gmult}[2]{g(#1,\ldots,#2)}
+%\newcommand{\sigeval}{\mathsf{SigEval}}
+%\newcommand{\id}{\mathsf{id}}
+%\newcommand{\spk}{spk}
+%\newcommand{\ssk}{ssk}
+%\newcommand{\sigset}{\mathsf{Setup}}
+%\newcommand{\sigsign}{\mathsf{Sign}}
+%\newcommand{\sigvrf}{\mathsf{Verify}}
+%\newcommand{\sigevallin}{\mathsf{Combine}}
+%\newcommand{\siglin}{\sigma}
+%\newcommand{\unf}{UNF^\adv_\sigsch}
+
+%% LTV
+\newcommand{\modulo}[2]{\ensuremath{[#1]_{#2}}\xspace}
+\newcommand{\inv}[1]{\ensuremath{#1^{-1}}\xspace}
+\newcommand{\indobf}{{\normalfont \textbf{IND-OBF}}\xspace}
+\newcommand{\indenc}{{\normalfont \textbf{IND-ENC}}\xspace}
+\newcommand{\indencmjp}{\ensuremath{\indenc_{\bp}}\xspace}
+\newcommand{\indio}{{\normalfont \textbf{IND-IO}}\xspace}
+\newcommand{\windenc}{{\normalfont \textbf{wIND-ENC}}\xspace}
+\newcommand{\windencmjp}{\ensuremath{\windenc_{\bp}}\xspace}
+\newcommand{\trhide}{{\normalfont \textbf{TR-HIDE}}\xspace}
+\newcommand{\randenc}{{\normalfont \textbf{RANDENC}}\xspace}
+\newcommand{\indzt}{{\normalfont \textbf{IND-ZT}}\xspace}
+\newcommand{\indbp}{\ensuremath{{\normalfont \textbf{IND-}}\bp}\xspace}
+\newcommand{\indztmjp}{\ensuremath{\indzt_{\bp}}\xspace}
+\newcommand{\ltvztenctilde}{\ensuremath{\prod\limits_{i=1}^\kappa \beta_i \cdot \widetilde{\alpha} + \widetilde{r} + \beta^{(1)} + \beta^{(2)} + \ldots + \beta^{(\kappa-1)}}}
+\newcommand{\ltvztenczerotilde}{\ensuremath{\widetilde{r} + \beta^{(1)} + \beta^{(2)} + \ldots + \beta^{(\kappa-1)}}}
+\newcommand{\ltvztenc}{\ensuremath{\prod\limits_{i=1}^\kappa \beta_i \cdot \widetilde{\alpha} + \hat{r} + \beta^{(1)} + \beta^{(2)} + \ldots + \beta^{(\kappa-1)}}}
+\newcommand{\ltvztenczero}{\ensuremath{\hat{r} + \beta^{(1)} + \beta^{(2)} + \ldots + \beta^{(\kappa-1)}}}
+\newcommand{\ltvztenczerox}{\ensuremath{\hat{r}_x + \beta^{(1)} + \beta^{(2)} + \ldots + \beta^{(\kappa-1)}}}
+\newcommand{\ltvztenczeronor}{\ensuremath{\beta^{(1)} + \beta^{(2)} + \ldots + \beta^{(\kappa-1)}}}
+\newcommand{\ltvztenczeronorrho}{\ensuremath{\beta_\rho^{(1)} + \beta_\rho^{(2)} + \ldots + \beta_\rho^{(\kappa-1)}}}
+\newcommand{\gghztenc}{\ensuremath{\widetilde{\alpha} \cdot g^{-1} + \gamma_1 + \gamma_2 \cdot g + \ldots + \gamma_{\kappa} \cdot g^{\kappa-1}}\xspace}
+\newcommand{\gghztencinp}[1]{\ensuremath{\widetilde{\alpha}_{#1} \cdot g^{-1} + \gamma_{1,#1} + \gamma_{2,#1} \cdot g + \ldots + \gamma_{\kappa,#1} \cdot g^{\kappa-1}\xspace}}
+\newcommand{\ztparam}{\ensuremath{\prod\limits_{i=1}^\kappa \beta_i \cdot z_i}\xspace}
+\newcommand{\nc}{\ensuremath{\textbf{NC}^1}\xspace}
+\newcommand{\pppoly}{\ensuremath{\textbf{P/poly}}\xspace}
+\newcommand{\advindzt}{\ensuremath{1 - 2\prob{\indztmjp^\adv = 1}}\xspace}
+\newcommand{\advindenc}{\ensuremath{1 - 2\prob{\indencmjp^\adv = 1}}\xspace}
+\newcommand{\advwindenc}{\ensuremath{1 - 2\prob{\windencmjp^\adv = 1}}\xspace}
+\newcommand{\advrandenc}{\ensuremath{1 - 2\prob{\randenc^\adv = 1}}\xspace}
+\newcommand{\sampset}{\ensuremath{\mathcal{R}}\xspace}
+\newcommand{\rx}{\ensuremath{\hat{r}_x}\xspace}
+\newcommand{\bx}[1]{\ensuremath{\beta^{(#1)}}}
+\newcommand{\rbx}{\ensuremath{\hat{r}^{\beta}_x}\xspace}
+\newcommand{\px}{\ensuremath{\rho_x}\xspace}
+\newcommand{\dx}{\ensuremath{\delta_x}\xspace}
+\newcommand{\anniset}{\ensuremath{\{\hat{r}_x\}_{x \in \X}}\xspace}
+\newcommand{\annisetb}{\ensuremath{\{\hat{r}^{\beta}_x\}_{x \in \X}}\xspace}
+\newcommand{\dped}{\ensuremath{\mathsf{DPED}}\xspace}
+\newcommand{\dpedparams}{\ensuremath{\mathsf{DPED}_{\secpar,\kappa,n,\ell,\chi,\bB}}\xspace}
+\newcommand{\balpha}{\ensuremath{\bm{\alpha}}\xspace}
+\newcommand{\bbeta}{\ensuremath{\bm{\beta}}\xspace}
+\newcommand{\bB}{\ensuremath{\bm{B}}\xspace}
+\newcommand{\br}{\ensuremath{\bm{r}}\xspace}
+\newcommand{\bS}{\ensuremath{\bm{S}}\xspace}
+
+%
+% ggh15
+%
+\newcommand{\apk}{\ensuremath{\bm{A}}\xspace}
+\newcommand{\bpk}{\ensuremath{\bm{B}}\xspace}
+\newcommand{\hpk}{\ensuremath{\bm{H}}\xspace}
+\newcommand{\rpk}{\ensuremath{\bm{R}}\xspace}
+\newcommand{\upk}{\ensuremath{\bm{U}}\xspace}
+\newcommand{\ypk}{\ensuremath{\bm{Y}}\xspace}
+\newcommand{\zpk}{\ensuremath{\bm{Z}}\xspace}
+\newcommand{\gadg}{\ensuremath{\bm{G}}\xspace}
+\newcommand{\gadginv}[1]{\ensuremath{\bm{G}^{-1}(#1)}\xspace}
+\newcommand{\pred}[2]{\ensuremath{\mathsf{P}_{#1}(#2)}\xspace}
+\newcommand{\bpkend}[1]{\ensuremath{\bm{B}_{#1}^\mathsf{end}}\xspace}
+\newcommand{\dencodend}[1]{\ensuremath{\dencod_{#1}^\mathsf{end}}\xspace}
+\newcommand{\trap}{\ensuremath{\bm{T}}\xspace}
+\newcommand{\dencod}{\ensuremath{\bm{D}}\xspace}
+\newcommand{\secencod}{\ensuremath{\bm{S}}\xspace}
+\newcommand{\errencod}{\ensuremath{\bm{E}}\xspace}
+\newcommand{\rencodproof}[3]{\ensuremath{\rencod_{\path{#2}{#3}}^{(#1)}}\xspace}
+\newcommand{\err}{\ensuremath{\bm{e}}\xspace}
+\newcommand{\pathenc}[3]{\ensuremath{[#1]_{#2 \rightarrow #3}}\xspace}
+\newcommand{\patharrow}[2]{\ensuremath{\apk_{#1} \rightarrow \apk_{#2}}\xspace}
+\newcommand{\patharrowkey}[2]{\ensuremath{\apk'_{#1} \rightarrow \apk'_{#2}}\xspace}
+\newcommand{\eqtest}[1][\cdot]{\ensuremath{\mathsf{ZeroTest}(#1)}}
+\newcommand{\keygen}[1][\cdot]{\ensuremath{\mathsf{KeyGen}(#1)}\xspace}
+\newcommand{\setup}[1][\cdot]{\ensuremath{\mathsf{Setup}(#1)}\xspace}
+\newcommand{\setupparams}{\ensuremath{\secparam,1^\kappa,1^\eta,1^\nu}\xspace}
+\newcommand{\encode}[1][\cdot]{\ensuremath{\mathsf{Encode}(#1)}\xspace}
+\newcommand{\rencode}[1][\cdot]{\ensuremath{\mathsf{REncode}(#1)}\xspace}
+\newcommand{\mult}[1][\cdot]{\ensuremath{\mathsf{Mult}(#1)}\xspace}
+\newcommand{\add}[1][\cdot]{\ensuremath{\mathsf{Add}(#1)}\xspace}
+\newcommand{\ek}{\ensuremath{\mathsf{ek}}\xspace}
+\newcommand{\pkenc}{\ensuremath{\mathsf{pk}}\xspace}
+\newcommand{\experi}{\ensuremath{\mathsf{exp}}\xspace}
+\newcommand{\gxdh}{\ensuremath{\mathsf{gxdh}}\xspace}
+\newcommand{\gss}{\ensuremath{\mathsf{GSS}_{M,k,L}}\xspace}
+% \newcommand{\rand}{\ensuremath{\mathsf{rand}}\xspace}
+\newcommand{\msgdist}{\ensuremath{\M}\xspace}
+\newcommand{\Da}{\ensuremath{\D_\alpha}\xspace}
+\newcommand{\distrib}{\ensuremath{d_{\secpar}}\xspace}
+\newcommand{\distribensem}{\ensuremath{\{d_{\secpar}\}_{\secpar \in \NN}}\xspace}
+\newcommand{\hent}[1]{\ensuremath{\bm{\stackrel{\sim}{H}}_{\infty}(#1)}\xspace}
+\newcommand{\alpsec}{\ensuremath{\alpha(\secpar)}\xspace}
+\newcommand{\encodingprod}{\ensuremath{\widetilde{R}}\xspace}
+\newcommand{\encoding}[1]{\ensuremath{R_{#1,b_{#1}}}\xspace}
+\newcommand{\encodingfix}[2]{\ensuremath{R_{#1,#2}}\xspace}
+\newcommand{\encodingkey}[1]{\ensuremath{R'_{#1,b_{#1}}}\xspace}
+\newcommand{\encodingkeyfix}[2]{\ensuremath{R'_{#1,#2}}\xspace}
+\newcommand{\encval}[1]{\ensuremath{S_{#1,b_{#1}}}\xspace}
+
+%
+% lattice
+%
+\newcommand{\trapsamp}[1]{\ensuremath{\mathsf{TrapSamp}(#1)}\xspace}
+\newcommand{\round}[2]{\ensuremath{\lfloor #1 \rceil_{#2}}\xspace}
+\newcommand{\roundbig}[2]{\ensuremath{\left\lfloor #1 \right\rceil_{#2}}\xspace}
+\newcommand{\modi}[1]{\ensuremath{\text{mod } #1}\xspace}
+\newcommand{\elwe}[1]{\ensuremath{\mathsf{ELWE}^{\alpha}_{#1}}\xspace}
+\newcommand{\lwe}[1]{\ensuremath{\mathsf{LWE}_{#1}}\xspace}
+\newcommand{\nulwe}[1]{\ensuremath{\mathsf{NULWE}_{#1}}\xspace}
+\newcommand{\lwr}[1]{\ensuremath{\mathsf{LWR}_{#1}}\xspace}
+\newcommand{\presamp}[1]{\ensuremath{\mathsf{PreImgSamp}(#1)}\xspace}
+\newcommand{\matsamp}[1]{\ensuremath{\mathsf{MatSamp}(#1)}\xspace}
+
+% RKA stuff
+
+\newcommand{\frka}[2]{\ensuremath{F_{\vec{#1},\vec{#2}}}\xspace}
+\newcommand{\atup}[1]{\ensuremath{(a_{#1,b})_{#1 \in [\secpar], b \in \bin}}\xspace}
+\newcommand{\ctup}[1]{\ensuremath{(c_{#1,b})_{#1 \in [n], b \in \bin}}\xspace}
+\newcommand{\fmlmpp}[1]{\ensuremath{F_{\parpub}(#1)}\xspace}
+\newcommand{\proda}{\ensuremath{\prod\limits_{i=1}^{\secpar} a_{i,K_i}}\xspace}
+\newcommand{\prodaenc}{\ensuremath{\prod\limits_{i=1}^{\secpar} [a_{i,K_i}]}\xspace}
+\newcommand{\prodc}{\ensuremath{\prod\limits^{n}_{j=1} c_{j,x_j}}\xspace}
+\newcommand{\prodcenc}{\ensuremath{\prod\limits^{n}_{j=1} [c_{j,x_j}]}\xspace}
+\newcommand{\mm}{\ensuremath{\mathsf{MM}}\xspace}
+\newcommand{\parvec}[1]{\ensuremath{\vec{(#1)}}\xspace}
+
+% PRF stuff
+
+\newcommand{\prfexp}{\ensuremath{\mathsf{prf}}\xspace}
+\newcommand{\cprfexp}{\ensuremath{\mathsf{cprf}}\xspace}
+\newcommand{\chcprfexp}{\ensuremath{\mathsf{chcprf}}\xspace}
+\newcommand{\cprf}{\ensuremath{\mathsf{C}\prf}\xspace}
+\newcommand{\chcprf}{\ensuremath{\mathsf{CH}\cprf}\xspace}
+\newcommand{\ceval}[1]{\ensuremath{\mathsf{CEval}(#1)}\xspace}
+\newcommand{\realeval}[1]{\ensuremath{\mathsf{Eval}(#1)}\xspace}
+\newcommand{\constrain}[1]{\ensuremath{\mathsf{Constrain}(#1)}\xspace}
+\newcommand{\prforacle}[1]{\ensuremath{\odv_{\X}(\prf.\realeval{\spar,\parpub{},#1})}\xspace}
+\newcommand{\prforacleuni}[1]{\ensuremath{\odv_{\X}(f(#1))}\xspace}
+\newcommand{\cprforacle}[1]{\ensuremath{\odv_{\X}(\cprf.\realeval{\spar,\parpub{},#1})}\xspace}
+\newcommand{\constrainoracle}[1]{\ensuremath{\odv{}_{\sdv}(\cprf.\constrain{\spar,\parpub{},#1})}\xspace}
+\newcommand{\constrainoraclecirc}[1]{\ensuremath{\odv{}_{\cdv}(\cprf.\constrain{\spar,\parpub{},#1})}\xspace}
+\newcommand{\evalj}{\ensuremath{F^{(j)}}\xspace}
+\newcommand{\query}[1]{\ensuremath{\mathsf{query}(#1)}\xspace}
+\newcommand{\realexp}{\ensuremath{\mathsf{Real}}\xspace}
+\newcommand{\idealexp}{\ensuremath{\mathsf{Ideal}}\xspace}
+\newcommand{\ck}{\ensuremath{\mathsf{CK}}\xspace}
+\newcommand{\compa}[1]{\ensuremath{\mathsf{ComputeA}(#1)}\xspace}
+\newcommand{\compc}[1]{\ensuremath{\mathsf{ComputeC}(#1)}\xspace}
+
+% Matrix stuff
+
+\newcommand{\adims}{{\ensuremath{n \times m}}\xspace}
+\newcommand{\nuadims}{{\ensuremath{k \times m}}\xspace}
+\newcommand{\numdims}{{\ensuremath{n \times k}}\xspace}
+\newcommand{\ddims}{{\ensuremath{m \times m}}\xspace}
+\newcommand{\denddims}{\ensuremath{(\ell(\ell-1)/2)\ddims{}}\xspace}
+\newcommand{\sdims}{{\ensuremath{n \times n}}\xspace}
+\newcommand{\nusdims}{{\ensuremath{k \times k}}\xspace}
+\newcommand{\pathmat}[2]{\ensuremath{{#1}^{(#2)}}\xspace}
+\newcommand{\finalmat}[2]{\ensuremath{\overline{\pathmat{\apk}{#1}_{#2}}}\xspace}
+
+% set notation
+
+\newcommand{\setnot}[3]{\{#1_{#2}\}_{#2 \in [#3]}}
+\newcommand{\setnotspecit}[4]{\{#1_{#2}\}_{#3 \in #4}}
+\newcommand{\twosetnot}[4]{\{#1_{#3},#2_{#3}\}_{#3 \in [#4]}}
+\newcommand{\threesetnot}[5]{\{#1_{#4},#2_{#4},#3_{#4}\}_{#4 \in [#5]}}
+\newcommand{\setnottwo}[5]{\{#1_{#2,#3}\}_{#2 \in [#4],#3 \in #5}}
+\newcommand{\setnottwoextra}[6]{\{#1_{#2,#3}\}_{#2 \in [#4],#3 \in #5,#6}}
+\newcommand{\setnottwospec}[5]{\{#1_{#2,#3}\}_{#2 \in #4,#3 \in #5}}
+\newcommand{\setnottwospecextra}[6]{\{#1_{#2,#3}\}_{#2 \in #4,#3 \in #5,#6}}
+\newcommand{\setnotthreespec}[7]{\{#1_{#2,#3,#4}\}_{#2 \in #5,#3 \in #6,#4 \in #7}}
+\newcommand{\setnotthreespecextra}[8]{\{#1_{#2,#3,#4}\}_{#2 \in #5,#3 \in #6,#4 \in #7,#8}}
+\newcommand{\setnottwostack}[5]{\{#1_{#2,#3}\}_{\substack{#2 \in [#4]\hfill\\#3 \in #5\hfill}}}
+\newcommand{\setnottwostackextra}[6]{\{#1_{#2,#3}\}_{\substack{#2 \in [#4]\hfill\\#3 \in #5\hfill\\#6\hfill}}}
+\newcommand{\setnottwospecstack}[5]{\{#1_{#2,#3}\}_{\substack{#2 \in #4\hfill\\#3 \in #5\hfill}}}
+\newcommand{\setnotthreespecstack}[7]{\{#1_{#2,#3,#4}\}_{\substack{#2 \in #5\hfill\\#3 \in #6\hfill\\#4 \in #7\hfill}}}
+\newcommand{\twosetnottwo}[6]{\{#1_{#3,#4},#2_{#3,#4}\}_{#3 \in [#5],#4 \in #6}}
+\newcommand{\twosetnottwoextra}[7]{\{#1_{#3,#4},#2_{#3,#4}\}_{#3 \in [#5],#4 \in #6,#7}}
+\newcommand{\twosetnottwospec}[6]{\{#1_{#3,#4},#2_{#3,#4}\}_{#3 \in #5,#4 \in #6}}
+\newcommand{\twosetnottwospecextra}[7]{\{#1_{#3,#4},#2_{#3,#4}\}_{#3 \in #5,#4 \in #6,#7}}
+\newcommand{\threesetnottwospec}[7]{\{#1_{#4,#5},#2_{#4,#5},#3_{#4,#5}\}_{#4 \in #6,#5 \in #7}}
+\newcommand{\comp}{\ensuremath{\stackrel{c}{\simeq}}\xspace}
+\newcommand{\conj}{\ensuremath{\{0,1,*\}}\xspace}
+
+
